@@ -186,16 +186,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-      135deg,
-      rgba(202, 240, 248, 0.9) 0%,
-      rgba(144, 224, 239, 0.8) 50%,
-      rgba(0, 180, 216, 0.7) 100%
-    ),
-    url("https://images.unsplash.com/photo-1542652694-40abf526446e?w=1600&q=80");
-  background-size: cover;
-  background-position: center;
-  opacity: 0.15;
+  background: linear-gradient(135deg, #03045e 0%, #0077b6 100%);
   z-index: -1;
 }
 
@@ -211,11 +202,13 @@ body {
   font-weight: 800;
   line-height: 1.1;
   margin-bottom: 24px;
+  padding-top: 40px;
   animation: fadeInUp 0.8s ease-out;
+  color: var(--white);
 }
 
 .gradient-text {
-  background: var(--gradient-1);
+  background: linear-gradient(135deg, #90e0ef 0%, #caf0f8 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -223,7 +216,7 @@ body {
 
 .hero-subtitle {
   font-size: 20px;
-  color: var(--text-light);
+  color: rgba(255, 255, 255, 0.9);
   margin-bottom: 40px;
   animation: fadeInUp 0.8s ease-out 0.2s backwards;
 }
@@ -242,13 +235,13 @@ body {
 .stat-number {
   font-size: 48px;
   font-weight: 800;
-  color: var(--primary-color);
+  color: #90e0ef;
   line-height: 1;
 }
 
 .stat-label {
   font-size: 14px;
-  color: var(--text-light);
+  color: rgba(255, 255, 255, 0.8);
   margin-top: 8px;
 }
 
@@ -266,6 +259,9 @@ body {
   font-weight: 600;
   cursor: pointer;
   transition: var(--transition);
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
 }
 
 .btn-primary {
@@ -280,27 +276,37 @@ body {
 }
 
 .btn-secondary {
-  background: transparent;
-  color: var(--primary-color);
-  border: 2px solid var(--primary-color);
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--white);
+  border: 2px solid var(--white);
 }
 
 .btn-secondary:hover {
-  background: var(--primary-color);
-  color: var(--white);
+  background: var(--white);
+  color: var(--primary-color);
 }
 
 .hero-image {
   position: relative;
   height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero-main-image {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  border-radius: 30px;
-  box-shadow: var(--shadow-lg);
+  object-fit: contain;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.hero-main-image.boomerang {
+  width: 70%;
+  height: auto;
+  margin: 0 auto;
+  display: block;
 }
 
 .floating-card {
@@ -317,20 +323,20 @@ body {
 }
 
 .card-1 {
-  top: 10%;
-  left: 10%;
+  top: 15%;
+  left: 5%;
   animation-delay: 0s;
 }
 
 .card-2 {
-  top: 45%;
+  top: 50%;
   right: 5%;
   animation-delay: 1s;
 }
 
 .card-3 {
-  bottom: 15%;
-  left: 20%;
+  bottom: 20%;
+  left: 10%;
   animation-delay: 2s;
 }
 
@@ -1098,6 +1104,18 @@ section {
   }
 }
 
+@keyframes boomerang {
+  0% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-15px) scale(1.02);
+  }
+  100% {
+    transform: translateY(0) scale(1);
+  }
+}
+
 @keyframes bounce {
   0%,
   100% {
@@ -1119,6 +1137,139 @@ section {
   }
 }
 
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+  }
+}
+
+/* ==========================================
+   HERO IMAGE BOOMERANG EFFECT
+   ========================================== */
+.hero-main-image.boomerang {
+  animation: boomerang 3s ease-in-out infinite;
+}
+
+/* ==========================================
+   PRICE CARD IN HERO
+   ========================================== */
+.card-price {
+  background: linear-gradient(135deg, #00b4d8 0%, #0077b6 100%) !important;
+  color: white !important;
+  padding: 20px 28px !important;
+  top: 10% !important;
+  right: 10% !important;
+  animation-delay: 0.5s !important;
+}
+
+.card-price .card-content {
+  text-align: center;
+}
+
+.card-price .price-large {
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 1;
+  margin-bottom: 4px;
+}
+
+.card-price .price-label {
+  font-size: 16px;
+  font-weight: 500;
+  opacity: 0.9;
+}
+
+/* ==========================================
+   PRICING CARD CURRENCY STYLING
+   ========================================== */
+.pricing-price {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  margin-bottom: 8px;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.currency-lek {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-light);
+}
+
+.pricing-card.featured .currency-lek {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.pricing-price .amount {
+  font-size: 56px;
+  font-weight: 800;
+  line-height: 1;
+}
+
+/* ==========================================
+   WHATSAPP FLOATING BUTTON
+   ========================================== */
+.whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 30px;
+  right: 30px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  animation: pulse 2s infinite;
+}
+
+.whatsapp-float:hover {
+  background-color: #128c7e;
+  transform: scale(1.1);
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.4);
+}
+
+.whatsapp-float svg {
+  width: 35px;
+  height: 35px;
+}
+
+/* ==========================================
+   SECTION BACKGROUND UPDATES
+   ========================================== */
+.about {
+  background: linear-gradient(180deg, rgba(202, 240, 248, 0.3) 0%, rgba(144, 224, 239, 0.2) 100%);
+}
+
+.system {
+  background: linear-gradient(180deg, rgba(144, 224, 239, 0.25) 0%, rgba(0, 180, 216, 0.2) 100%);
+}
+
+.benefits {
+  background: linear-gradient(180deg, rgba(0, 180, 216, 0.2) 0%, rgba(0, 119, 182, 0.15) 100%);
+}
+
+.pricing {
+  background: linear-gradient(180deg, rgba(0, 119, 182, 0.15) 0%, rgba(3, 4, 94, 0.1) 100%);
+}
+
+.contact {
+  background: linear-gradient(180deg, rgba(3, 4, 94, 0.1) 0%, rgba(0, 119, 182, 0.12) 100%);
+}
+
 /* ==========================================
    RESPONSIVE DESIGN
    ========================================== */
@@ -1126,6 +1277,7 @@ section {
   .hero-title {
     padding-top: 20px;
     font-size: 48px;
+    color: var(--white);
   }
 
   .section-title {
@@ -1140,10 +1292,18 @@ section {
 
   .hero-image {
     height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .hero-main-image {
-    height: 400px;
+    height: auto;
+    max-height: 400px;
+  }
+
+  .hero-main-image.boomerang {
+    width: 60%;
   }
 
   .phases-grid,
@@ -1158,6 +1318,14 @@ section {
 
   .footer-content {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card-price .price-large {
+    font-size: 28px;
+  }
+
+  .card-price .price-label {
+    font-size: 15px;
   }
 }
 
@@ -1213,6 +1381,7 @@ section {
 
   .hero-title {
     font-size: 36px;
+    color: var(--white);
   }
 
   .section-title {
@@ -1236,6 +1405,18 @@ section {
     margin-bottom: 12px;
   }
 
+  .card-price {
+    padding: 16px 20px !important;
+  }
+
+  .card-price .price-large {
+    font-size: 24px !important;
+  }
+
+  .card-price .price-label {
+    font-size: 14px !important;
+  }
+
   .hero-image {
     display: flex;
     flex-direction: column;
@@ -1245,8 +1426,14 @@ section {
 
   .hero-main-image {
     position: relative;
-    height: 300px;
+    height: auto;
+    max-height: 300px;
     margin-bottom: 20px;
+  }
+
+  .hero-main-image.boomerang {
+    width: 80%;
+    animation: boomerang 3s ease-in-out infinite;
   }
 
   .card-1,
@@ -1315,12 +1502,25 @@ section {
   .footer-content {
     grid-template-columns: 1fr;
   }
+
+  .whatsapp-float {
+    width: 55px;
+    height: 55px;
+    bottom: 20px;
+    right: 20px;
+  }
+
+  .whatsapp-float svg {
+    width: 30px;
+    height: 30px;
+  }
 }
 
 @media (max-width: 480px) {
   .hero-title {
     padding-top: 15px;
     font-size: 28px;
+    color: var(--white);
   }
 
   .section-title {
@@ -1329,6 +1529,7 @@ section {
 
   .hero-subtitle {
     font-size: 16px;
+    color: rgba(255, 255, 255, 0.9);
   }
 
   .hero-stats {
@@ -1343,5 +1544,17 @@ section {
   .benefit-card,
   .pricing-card {
     padding: 30px 20px;
+  }
+
+  .whatsapp-float {
+    width: 50px;
+    height: 50px;
+    bottom: 15px;
+    right: 15px;
+  }
+
+  .whatsapp-float svg {
+    width: 28px;
+    height: 28px;
   }
 }
