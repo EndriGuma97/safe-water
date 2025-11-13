@@ -1,0 +1,11 @@
+# robots.txt for Filtra Uji me Qera
+# Allow all crawlers
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://filtrameqera.al/sitemap.xml
+
+# Crawl-delay for polite crawling
+Crawl-delay: 1
