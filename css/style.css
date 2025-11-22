@@ -1268,23 +1268,43 @@ section {
    SECTION BACKGROUND UPDATES
    ========================================== */
 .about {
-  background: linear-gradient(180deg, rgba(202, 240, 248, 0.3) 0%, rgba(144, 224, 239, 0.2) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(202, 240, 248, 0.3) 0%,
+    rgba(144, 224, 239, 0.2) 100%
+  );
 }
 
 .system {
-  background: linear-gradient(180deg, rgba(144, 224, 239, 0.25) 0%, rgba(0, 180, 216, 0.2) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(144, 224, 239, 0.25) 0%,
+    rgba(0, 180, 216, 0.2) 100%
+  );
 }
 
 .benefits {
-  background: linear-gradient(180deg, rgba(0, 180, 216, 0.2) 0%, rgba(0, 119, 182, 0.15) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 180, 216, 0.2) 0%,
+    rgba(0, 119, 182, 0.15) 100%
+  );
 }
 
 .pricing {
-  background: linear-gradient(180deg, rgba(0, 119, 182, 0.15) 0%, rgba(3, 4, 94, 0.1) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 119, 182, 0.15) 0%,
+    rgba(3, 4, 94, 0.1) 100%
+  );
 }
 
 .contact {
-  background: linear-gradient(180deg, rgba(3, 4, 94, 0.1) 0%, rgba(0, 119, 182, 0.12) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(3, 4, 94, 0.1) 0%,
+    rgba(0, 119, 182, 0.12) 100%
+  );
 }
 
 /* ==========================================
@@ -1595,5 +1615,105 @@ section {
   .whatsapp-float svg {
     width: 28px;
     height: 28px;
+  }
+}
+
+/* =========================================
+   GIVEAWAY PAGE STYLES
+   ========================================= */
+
+/* Background for the specific page */
+/* =========================================
+   GIVEAWAY PAGE STYLES - UPDATED
+   ========================================= */
+
+/* Background for the specific page - DEEP BLUE */
+body.giveaway-page {
+  background: linear-gradient(135deg, #0a2342 0%, #1c4b82 100%);
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 20px 0; /* Added padding top/bottom */
+}
+
+/* Main Container */
+.giveaway-container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 50px 30px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  border-radius: 15px; /* Softer edges */
+}
+
+/* Logo Styling - WAY BIGGER */
+.giveaway-logo {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.giveaway-logo img {
+  height: 140px; /* Increased significantly */
+  width: auto;
+  transition: transform 0.3s ease;
+}
+
+.giveaway-logo img:hover {
+  transform: scale(1.05);
+}
+
+/* Product Image Styling */
+.giveaway-image {
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 0 20px;
+}
+
+.giveaway-image img {
+  max-width: 100%;
+  height: auto;
+  max-height: 350px;
+  object-fit: contain;
+  filter: drop-shadow(0 15px 25px rgba(0, 0, 0, 0.15));
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Form Wrapper */
+.giveaway-form-wrapper {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+/* Floating Animation */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  body.giveaway-page {
+    padding: 10px;
+  }
+
+  .giveaway-container {
+    padding: 30px 15px;
+  }
+
+  /* Adjust logo on mobile so it's not too huge */
+  .giveaway-logo img {
+    height: 100px;
+  }
+
+  .giveaway-image img {
+    max-height: 250px;
   }
 }
