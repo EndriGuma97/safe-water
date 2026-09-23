@@ -75,6 +75,15 @@ const translations = {
         benefit6_title: "Ujë Alkalin",
         benefit6_desc: "Ndryshe nga sistemet e tjera RO, sistemi ynë rivitalizon ujin duke shtuar minerale thelbësore për pH të balancuar.",
 
+        // Client Story (AIBA)
+        story_subtitle: "Klientët Tanë",
+        story_title: "Kompania AIBA zgjodhi SAFEWATER për ujin më të pastër dhe më të sigurt!",
+        story_p1: "Nga tap i zakonshëm tek uji i filtruar – ndryshimi është i dukshëm dhe i shijshëm.",
+        story_p2: "Testuar, i pastër, pa aromë dhe shije – për punonjësit dhe klientët tanë!",
+        story_p3: "Bëhu edhe ti pjesë e këtij ndryshimi, instalo SAFEWATER në shtëpi apo biznesin tënd.",
+        story_video_label: "Video: Kompania AIBA zgjodhi SAFEWATER",
+        story_play_label: "Luaj videon",
+
         // Pricing Section
         pricing_subtitle: "Çmimet",
         pricing_title: "Zgjidh Planin Tënd",
@@ -85,6 +94,7 @@ const translations = {
         pricing_best: "Më i Miri",
         pricing_yearly: "Vjetor",
         pricing_per_year: "/vit",
+        pricing_breakdown: "Që do të thotë 1,075 Lekë/muaj ose 35 Lekë/ditë",
         pricing_save: "Kurse XX%",
         pricing_trial: "Provë 1 Muaj",
         pricing_first_month: "/muaji i parë",
@@ -110,8 +120,37 @@ const translations = {
         contact_address: "Tiranë, Shqipëri",
         contact_hours: "Orari",
         contact_hours_text: "E Hënë - E Shtunë: 9:00 - 18:00",
-        form_placeholder_title: "Vendos Zoho Form Këtu",
-        form_placeholder_text: "Kjo zonë është rezervuar për formularin e Zoho. Zëvendëso këtë element me kodin e formularit tënd.",
+        form_title: "Kërko ofertën falas",
+        form_subtitle: "Plotëso të dhënat dhe të telefonojmë brenda 24 orëve.",
+        form_type_legend: "Ku do ta instalosh sistemin?",
+        form_type_home: "Për shtëpi",
+        form_type_business: "Për biznes",
+        form_name: "Emri dhe mbiemri",
+        form_name_ph: "p.sh. Arben Hoxha",
+        form_phone: "Telefoni",
+        form_email: "Email",
+        form_email_ph: "emri@shembull.com",
+        form_optional: "(opsionale)",
+        form_city: "Qyteti",
+        form_city_ph: "Zgjidh qytetin",
+        form_city_other: "Tjetër",
+        form_business: "Emri i biznesit",
+        form_business_ph: "p.sh. Kafe, zyrë, restorant",
+        form_message: "Mesazhi",
+        form_message_ph: "p.sh. Kur preferon të të telefonojmë?",
+        form_submit: "Dërgo kërkesën",
+        form_trust_1: "Pa asnjë detyrim",
+        form_trust_2: "Përgjigje brenda 24 orëve",
+        form_trust_3: "Instalim falas",
+        form_err_name: "Shkruaj emrin tënd.",
+        form_err_phone: "Shkruaj një numër telefoni të vlefshëm.",
+        form_err_email: "Kjo adresë email nuk duket e saktë.",
+        form_err_city: "Zgjidh qytetin ku do ta instalosh.",
+        form_err_send: "Kërkesa nuk u dërgua. Provo përsëri ose na shkruaj në <a href='https://wa.me/355693410332' target='_blank' rel='noopener noreferrer'>WhatsApp</a>.",
+        form_err_rate: "Ke dërguar disa kërkesa radhazi. Provo përsëri pas pak minutash ose na shkruaj në <a href='https://wa.me/355693410332' target='_blank' rel='noopener noreferrer'>WhatsApp</a>.",
+        form_success_title: "Faleminderit!",
+        form_success_text: "Kërkesa jote u dërgua me sukses. Do të të kontaktojmë brenda 24 orëve.",
+        form_again: "Dërgo një kërkesë tjetër",
 
         // Footer
         footer_text: "Sistemi i vetëm 6-fazor RO+Alkalin me qera në Shqipëri për ujë të pastër dhe të shëndetshëm.",
@@ -122,7 +161,9 @@ const translations = {
         footer_install: "Instalim",
         footer_support: "Mbështetje",
         footer_follow: "Na Ndiq",
-        footer_copyright: "&copy; 2024 Filtra Uji. Të gjitha të drejtat e rezervuara."
+        coverage_title: "Vijmë në çdo qytet të Shqipërisë",
+        coverage_text: "Instalim dhe mirëmbajtje falas kudo në vend, nga Shkodra deri në Sarandë. Ekipi ynë teknik mbulon të 12 qarqet e Shqipërisë.",
+        footer_copyright: "&copy; 2026 filtrameqera.al. Të gjitha të drejtat e rezervuara."
     },
     en: {
         // Navigation
@@ -197,6 +238,15 @@ const translations = {
         benefit6_title: "Alkaline Water",
         benefit6_desc: "Unlike other RO systems, our system revitalizes water by adding essential minerals for balanced pH.",
 
+        // Client Story (AIBA)
+        story_subtitle: "Our Clients",
+        story_title: "AIBA chose SAFEWATER for the purest and safest water!",
+        story_p1: "From ordinary tap water to filtered water – a difference you can see and taste.",
+        story_p2: "Tested, pure, no odor or aftertaste – for our employees and our clients!",
+        story_p3: "Be part of this change too – install SAFEWATER in your home or business.",
+        story_video_label: "Video: AIBA chose SAFEWATER",
+        story_play_label: "Play video",
+
         // Pricing Section
         pricing_subtitle: "Pricing",
         pricing_title: "Choose Your Plan",
@@ -207,6 +257,7 @@ const translations = {
         pricing_best: "Best Value",
         pricing_yearly: "Yearly",
         pricing_per_year: "/year",
+        pricing_breakdown: "That is 1,075 Lekë/month or 35 Lekë/day",
         pricing_save: "Save XX%",
         pricing_trial: "1 Month Trial",
         pricing_first_month: "/first month",
@@ -232,8 +283,37 @@ const translations = {
         contact_address: "Tirana, Albania",
         contact_hours: "Hours",
         contact_hours_text: "Monday - Saturday: 9:00 - 18:00",
-        form_placeholder_title: "Place Zoho Form Here",
-        form_placeholder_text: "This area is reserved for the Zoho form. Replace this element with your form code.",
+        form_title: "Get your free quote",
+        form_subtitle: "Leave your details and we will call you within 24 hours.",
+        form_type_legend: "Where will you install the system?",
+        form_type_home: "For home",
+        form_type_business: "For business",
+        form_name: "Full name",
+        form_name_ph: "e.g. Arben Hoxha",
+        form_phone: "Phone",
+        form_email: "Email",
+        form_email_ph: "name@example.com",
+        form_optional: "(optional)",
+        form_city: "City",
+        form_city_ph: "Choose your city",
+        form_city_other: "Other",
+        form_business: "Business name",
+        form_business_ph: "e.g. Café, office, restaurant",
+        form_message: "Message",
+        form_message_ph: "e.g. When is the best time to call you?",
+        form_submit: "Send request",
+        form_trust_1: "No obligation",
+        form_trust_2: "Reply within 24 hours",
+        form_trust_3: "Free installation",
+        form_err_name: "Please enter your name.",
+        form_err_phone: "Please enter a valid phone number.",
+        form_err_email: "This email address doesn't look right.",
+        form_err_city: "Choose the city for the installation.",
+        form_err_send: "Your request was not sent. Please try again or message us on <a href='https://wa.me/355693410332' target='_blank' rel='noopener noreferrer'>WhatsApp</a>.",
+        form_err_rate: "You've sent several requests in a row. Please try again in a few minutes or message us on <a href='https://wa.me/355693410332' target='_blank' rel='noopener noreferrer'>WhatsApp</a>.",
+        form_success_title: "Thank you!",
+        form_success_text: "Your request was sent successfully. We will contact you within 24 hours.",
+        form_again: "Send another request",
 
         // Footer
         footer_text: "The only 6-stage RO+Alkaline rental system in Albania for pure and healthy water.",
@@ -244,7 +324,9 @@ const translations = {
         footer_install: "Installation",
         footer_support: "Support",
         footer_follow: "Follow Us",
-        footer_copyright: "&copy; 2024 Water Filters. All rights reserved."
+        coverage_title: "We come to every city in Albania",
+        coverage_text: "Free installation and maintenance anywhere in the country, from Shkodër to Sarandë. Our technical team covers all 12 counties of Albania.",
+        footer_copyright: "&copy; 2026 filtrameqera.al. All rights reserved."
     }
 };
 
@@ -273,8 +355,32 @@ function switchLanguage() {
         }
     });
 
-    // Store language preference
-    localStorage.setItem('preferredLanguage', currentLang);
+    // Update translatable placeholders
+    document.querySelectorAll('[data-translate-placeholder]').forEach(element => {
+        const key = element.getAttribute('data-translate-placeholder');
+        if (translations[currentLang][key]) {
+            element.placeholder = translations[currentLang][key];
+        }
+    });
+
+    // Update translatable aria-labels
+    document.querySelectorAll('[data-translate-aria]').forEach(element => {
+        const key = element.getAttribute('data-translate-aria');
+        if (translations[currentLang][key]) {
+            element.setAttribute('aria-label', translations[currentLang][key]);
+        }
+    });
+
+    // Re-translate a visible form status message
+    const formStatus = document.getElementById('formStatus');
+    if (formStatus && formStatus.dataset.key && translations[currentLang][formStatus.dataset.key]) {
+        formStatus.innerHTML = translations[currentLang][formStatus.dataset.key];
+    }
+
+    // Store language preference (storage can be blocked, e.g. private mode)
+    try {
+        localStorage.setItem('preferredLanguage', currentLang);
+    } catch (e) {}
 }
 
 // ==========================================
@@ -388,6 +494,181 @@ function setupCTAButtons() {
 }
 
 // ==========================================
+// CONTACT FORM (sent through /api/contact -> Resend)
+// ==========================================
+function setupContactForm() {
+    const form = document.getElementById('contactForm');
+    if (!form) return;
+    form.noValidate = true;
+
+    const success = document.getElementById('formSuccess');
+    const status = document.getElementById('formStatus');
+    const submitBtn = form.querySelector('.lead-submit');
+    const businessField = document.getElementById('cf-business-field');
+    const againBtn = document.getElementById('formAgain');
+
+    const validators = {
+        name: value => value.trim().length >= 2,
+        phone: value => {
+            const digits = value.replace(/\D/g, '');
+            return /^[+\d\s().-]+$/.test(value.trim()) && digits.length >= 8 && digits.length <= 15;
+        },
+        // Same pattern as api/contact.js (what browsers use for type="email")
+        email: value => value.trim() === '' || /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)+$/.test(value.trim()),
+        city: value => value !== ''
+    };
+
+    function setFieldError(name, hasError) {
+        const input = form.elements[name];
+        if (!input) return;
+        const field = input.closest('.form-field');
+        input.setAttribute('aria-invalid', hasError ? 'true' : 'false');
+        if (field) field.classList.toggle('has-error', hasError);
+    }
+
+    function validateField(name) {
+        const valid = validators[name](form.elements[name].value);
+        setFieldError(name, !valid);
+        return valid;
+    }
+
+    function showStatus(key) {
+        if (!key) {
+            status.textContent = '';
+            status.classList.remove('is-error');
+            delete status.dataset.key;
+            return;
+        }
+        status.dataset.key = key;
+        status.innerHTML = translations[currentLang][key];
+        status.classList.add('is-error');
+    }
+
+    function setLoading(isLoading) {
+        submitBtn.disabled = isLoading;
+        submitBtn.classList.toggle('is-loading', isLoading);
+        submitBtn.setAttribute('aria-busy', isLoading ? 'true' : 'false');
+    }
+
+    function showSuccess() {
+        form.hidden = true;
+        success.hidden = false;
+        success.focus({ preventScroll: true });
+
+        // The form collapses, so on phones the panel can end up above the viewport
+        const navbar = document.querySelector('.navbar');
+        const navHeight = navbar ? navbar.offsetHeight : 0;
+        const rect = success.getBoundingClientRect();
+        if (rect.top < navHeight || rect.bottom > window.innerHeight) {
+            window.scrollTo({
+                top: rect.top + window.scrollY - navHeight - 20,
+                behavior: 'smooth'
+            });
+        }
+    }
+
+    function syncBusinessField() {
+        const isBusiness = form.elements.customerType.value === 'biznes';
+        businessField.hidden = !isBusiness;
+    }
+
+    form.querySelectorAll('input[name="customerType"]').forEach(radio => {
+        radio.addEventListener('change', syncBusinessField);
+    });
+    syncBusinessField();
+
+    // Validate on blur, clear errors as soon as the value becomes valid
+    Object.keys(validators).forEach(name => {
+        const input = form.elements[name];
+        const eventName = input.tagName === 'SELECT' ? 'change' : 'blur';
+        input.addEventListener(eventName, () => validateField(name));
+        input.addEventListener('input', () => {
+            if (input.getAttribute('aria-invalid') === 'true') validateField(name);
+        });
+    });
+
+    form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        if (submitBtn.disabled) return;
+        showStatus(null);
+
+        const invalid = Object.keys(validators).filter(name => !validateField(name));
+        if (invalid.length) {
+            form.elements[invalid[0]].focus();
+            return;
+        }
+
+        const data = Object.fromEntries(new FormData(form).entries());
+        setLoading(true);
+
+        try {
+            const response = await fetch(form.action, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+                body: JSON.stringify(data)
+            });
+            const result = await response.json().catch(() => ({}));
+
+            if (response.ok && result.ok) {
+                if (typeof gtag === 'function') {
+                    gtag('event', 'generate_lead', {
+                        form_name: 'contact',
+                        customer_type: data.customerType,
+                        city: data.city
+                    });
+                }
+                form.reset();
+                syncBusinessField();
+                showSuccess();
+            } else if (result.error === 'invalid' && Array.isArray(result.fields)) {
+                result.fields.forEach(name => setFieldError(name, true));
+                const first = form.elements[result.fields[0]];
+                if (first) first.focus();
+            } else if (result.error === 'rate_limited') {
+                showStatus('form_err_rate');
+            } else {
+                showStatus('form_err_send');
+            }
+        } catch (err) {
+            showStatus('form_err_send');
+        } finally {
+            setLoading(false);
+        }
+    });
+
+    againBtn.addEventListener('click', () => {
+        // A blur on the emptied fields may have flagged them after reset
+        Object.keys(validators).forEach(name => setFieldError(name, false));
+        success.hidden = true;
+        form.hidden = false;
+        form.elements.name.focus();
+    });
+}
+
+// ==========================================
+// CLIENT STORY VIDEO
+// ==========================================
+function setupClientVideo() {
+    const video = document.getElementById('aibaVideo');
+    const playBtn = document.getElementById('aibaVideoPlay');
+    if (!video || !playBtn) return;
+
+    // Show our play button first; native controls appear once playback starts
+    const frame = video.closest('.video-frame');
+    video.controls = false;
+    playBtn.addEventListener('click', () => {
+        video.controls = true;
+        video.play();
+    });
+    video.addEventListener('play', () => {
+        video.controls = true;
+        frame.classList.add('is-playing');
+        if (document.activeElement === playBtn) video.focus();
+    });
+    video.addEventListener('ended', () => frame.classList.remove('is-playing'));
+}
+
+// ==========================================
 // LOADING ANIMATION
 // ==========================================
 function initLoadingAnimation() {
@@ -403,7 +684,10 @@ function initLoadingAnimation() {
 // ==========================================
 document.addEventListener('DOMContentLoaded', () => {
     // Check for saved language preference
-    const savedLang = localStorage.getItem('preferredLanguage');
+    let savedLang = null;
+    try {
+        savedLang = localStorage.getItem('preferredLanguage');
+    } catch (e) {}
     if (savedLang && savedLang !== currentLang) {
         switchLanguage();
     }
@@ -419,6 +703,8 @@ document.addEventListener('DOMContentLoaded', () => {
     setupMobileMenu();
     setupScrollAnimations();
     setupCTAButtons();
+    setupContactForm();
+    setupClientVideo();
     initLoadingAnimation();
 
     // Add scroll event listener for navbar

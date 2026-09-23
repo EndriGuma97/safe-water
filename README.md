@@ -26,8 +26,9 @@ Modern, bilingual website for water filter rental business in Albania.
 3. **System Section** - Detailed 6-phase filtration explanation
 4. **Benefits Section** - Why rent the system
 5. **Pricing Section** - Three pricing plans (Monthly, Yearly, Trial)
-6. **Contact Section** - Contact info + Zoho form placeholder
-7. **Footer** - Links and social media
+6. **Client Story** - AIBA video testimonial (`media/`)
+7. **Contact Section** - Contact info + contact form (sent by email through Resend)
+8. **Footer** - Links, social media and every city we serve
 
 ## 📁 File Structure
 
@@ -39,6 +40,9 @@ Safe-Water/
 │   └── style.css      # All styles and animations
 ├── js/
 │   └── script.js      # All JavaScript functionality
+├── api/
+│   └── contact.js     # Vercel function: contact form -> Resend email
+├── media/             # AIBA video + poster
 ├── info.txt           # Marketing strategy document
 ├── about.txt          # Product information
 └── README.md          # This file
@@ -49,15 +53,18 @@ Safe-Water/
 ### 1. Basic Setup
 Simply open `index.html` in a web browser. The website works without any server.
 
-### 2. Add Zoho Form
-Replace the placeholder in `index.html` at the Contact section:
+### 2. Contact Form (Resend)
+The form in `#contact` posts to `/api/contact` (`api/contact.js`, a Vercel Function), which emails every request through the [Resend](https://resend.com) API.
 
-```html
-<!-- Find this section -->
-<div class="form-placeholder">
-    <!-- Replace with your Zoho form embed code -->
-</div>
-```
+Set these in Vercel -> Project -> Settings -> Environment Variables, then redeploy:
+
+| Variable | Required | Example |
+| --- | --- | --- |
+| `RESEND_API_KEY` | yes | `re_...` |
+| `CONTACT_TO_EMAIL` | no (default `andrewgouma@gmail.com`) | `andrewgouma@gmail.com, sales@example.com` |
+| `CONTACT_FROM_EMAIL` | no (default `SafeWater <noreply@dasmavip.com>`) | `SafeWater <noreply@dasmavip.com>` |
+
+The sender domain (`dasmavip.com`) must be verified at resend.com/domains. Never commit the API key; locally it lives in `.env.local` (gitignored).
 
 ### 3. Update Content
 - **Prices**: Search for "XX" or "XXX" in `index.html` and replace with actual prices
@@ -110,7 +117,7 @@ The website supports Albanian (SQ) and English (EN):
 ## 📋 TODO / Next Steps
 
 - [ ] Replace placeholder prices with actual values
-- [ ] Add Zoho form integration
+- [x] Contact form integration (Resend)
 - [ ] Add real product images
 - [ ] Update contact information
 - [ ] Test on all devices

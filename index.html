@@ -91,7 +91,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="css/style.css?v=20250122" />
+    <link rel="stylesheet" href="css/style.css?v=20260923" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -225,6 +225,21 @@
             }
           }
         ]
+      }
+    </script>
+
+    <!-- Structured Data - VideoObject Schema (AIBA client story) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "VideoObject",
+        "name": "Kompania AIBA zgjodhi SAFEWATER për ujin më të pastër dhe më të sigurt",
+        "description": "Nga tap i zakonshëm tek uji i filtruar – ndryshimi është i dukshëm dhe i shijshëm. Testuar, i pastër, pa aromë dhe shije – për punonjësit dhe klientët tanë!",
+        "thumbnailUrl": "https://filtrameqera.al/media/aiba-safewater-poster.jpg",
+        "contentUrl": "https://filtrameqera.al/media/aiba-safewater.mp4",
+        "uploadDate": "2026-09-23",
+        "duration": "PT1M26S",
+        "inLanguage": "sq"
       }
     </script>
 
@@ -823,6 +838,68 @@
       </div>
     </section>
 
+    <!-- Client Story Section (AIBA) -->
+    <section id="klientet" class="client-story">
+      <div class="container">
+        <div class="client-story-content">
+          <div class="client-story-media">
+            <div class="video-frame">
+              <video
+                id="aibaVideo"
+                class="client-video"
+                controls
+                playsinline
+                preload="none"
+                poster="media/aiba-safewater-poster.jpg?v=20260923"
+                aria-label="Video: Kompania AIBA zgjodhi SAFEWATER"
+                data-translate-aria="story_video_label"
+              >
+                <source
+                  src="media/aiba-safewater.mp4?v=20260923"
+                  type="video/mp4"
+                />
+              </video>
+              <button
+                type="button"
+                class="video-play"
+                id="aibaVideoPlay"
+                aria-label="Luaj videon"
+                data-translate-aria="story_play_label"
+              >
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M8 5.14v13.72a1 1 0 0 0 1.52.85l10.29-6.86a1 1 0 0 0 0-1.7L9.52 4.29A1 1 0 0 0 8 5.14z" />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="client-story-text">
+            <span class="section-subtitle" data-translate="story_subtitle"
+              >Klientët Tanë</span
+            >
+            <h2 class="client-story-title" data-translate="story_title">
+              Kompania AIBA zgjodhi SAFEWATER për ujin më të pastër dhe më të
+              sigurt!
+            </h2>
+            <p class="client-story-lead" data-translate="story_p1">
+              Nga tap i zakonshëm tek uji i filtruar – ndryshimi është i dukshëm
+              dhe i shijshëm.
+            </p>
+            <p data-translate="story_p2">
+              Testuar, i pastër, pa aromë dhe shije – për punonjësit dhe
+              klientët tanë!
+            </p>
+            <p class="client-story-cta-text" data-translate="story_p3">
+              Bëhu edhe ti pjesë e këtij ndryshimi, instalo SAFEWATER në shtëpi
+              apo biznesin tënd.
+            </p>
+            <a href="#contact" class="btn btn-primary" data-translate="nav_cta"
+              >Merr Ofertë</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Pricing Section -->
     <section id="pricing" class="pricing">
       <div class="container">
@@ -962,12 +1039,339 @@
             </div>
           </div>
           <div class="contact-form-wrapper">
-            <iframe
-              aria-label="Merr Ofertë"
-              frameborder="0"
-              style="height: 700px; width: 100%; border: none"
-              src="https://forms.zohopublic.eu/bitcryptics1/form/MerrOfert1/formperma/i7sKTIGjh4zuVM_QJcbcqWSepiNxuVDv76lojkbEtoQ"
-            ></iframe>
+            <form
+              id="contactForm"
+              class="lead-form"
+              action="/api/contact"
+              method="POST"
+            >
+              <div class="lead-form-head">
+                <h3 data-translate="form_title">Kërko ofertën falas</h3>
+                <p data-translate="form_subtitle">
+                  Plotëso të dhënat dhe të telefonojmë brenda 24 orëve.
+                </p>
+              </div>
+
+              <fieldset class="form-toggle">
+                <legend class="sr-only" data-translate="form_type_legend">
+                  Ku do ta instalosh sistemin?
+                </legend>
+                <label class="toggle-option">
+                  <input type="radio" name="customerType" value="shtepi" checked />
+                  <span class="toggle-face">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                      <polyline points="9 22 9 12 15 12 15 22" />
+                    </svg>
+                    <span data-translate="form_type_home">Për shtëpi</span>
+                  </span>
+                </label>
+                <label class="toggle-option">
+                  <input type="radio" name="customerType" value="biznes" />
+                  <span class="toggle-face">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
+                      <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+                    </svg>
+                    <span data-translate="form_type_business">Për biznes</span>
+                  </span>
+                </label>
+              </fieldset>
+
+              <div class="form-grid">
+                <div class="form-field">
+                  <label for="cf-name" data-translate="form_name">Emri dhe mbiemri</label>
+                  <div class="input-wrap">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                      <circle cx="12" cy="7" r="4" />
+                    </svg>
+                    <input
+                      id="cf-name"
+                      name="name"
+                      type="text"
+                      autocomplete="name"
+                      required
+                      minlength="2"
+                      maxlength="100"
+                      placeholder="p.sh. Arben Hoxha"
+                      data-translate-placeholder="form_name_ph"
+                      aria-describedby="cf-name-error"
+                    />
+                  </div>
+                  <p class="field-error" id="cf-name-error" data-translate="form_err_name">
+                    Shkruaj emrin tënd.
+                  </p>
+                </div>
+
+                <div class="form-field">
+                  <label for="cf-phone" data-translate="form_phone">Telefoni</label>
+                  <div class="input-wrap">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                    </svg>
+                    <input
+                      id="cf-phone"
+                      name="phone"
+                      type="tel"
+                      inputmode="tel"
+                      autocomplete="tel"
+                      required
+                      maxlength="30"
+                      placeholder="06X XXX XXXX"
+                      aria-describedby="cf-phone-error"
+                    />
+                  </div>
+                  <p class="field-error" id="cf-phone-error" data-translate="form_err_phone">
+                    Shkruaj një numër telefoni të vlefshëm.
+                  </p>
+                </div>
+
+                <div class="form-field">
+                  <label for="cf-email">
+                    <span data-translate="form_email">Email</span>
+                    <span class="optional" data-translate="form_optional">(opsionale)</span>
+                  </label>
+                  <div class="input-wrap">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                      <polyline points="22,6 12,13 2,6" />
+                    </svg>
+                    <input
+                      id="cf-email"
+                      name="email"
+                      type="email"
+                      autocomplete="email"
+                      maxlength="254"
+                      placeholder="emri@shembull.com"
+                      data-translate-placeholder="form_email_ph"
+                      aria-describedby="cf-email-error"
+                    />
+                  </div>
+                  <p class="field-error" id="cf-email-error" data-translate="form_err_email">
+                    Kjo adresë email nuk duket e saktë.
+                  </p>
+                </div>
+
+                <div class="form-field">
+                  <label for="cf-city" data-translate="form_city">Qyteti</label>
+                  <div class="input-wrap">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                      <circle cx="12" cy="10" r="3" />
+                    </svg>
+                    <select
+                      id="cf-city"
+                      name="city"
+                      required
+                      autocomplete="address-level2"
+                      aria-describedby="cf-city-error"
+                    >
+                      <option value="" disabled selected data-translate="form_city_ph">
+                        Zgjidh qytetin
+                      </option>
+                      <optgroup label="Berat">
+                        <option>Berat</option>
+                        <option>Çorovodë</option>
+                        <option>Dimal</option>
+                        <option>Kuçovë</option>
+                        <option>Poliçan</option>
+                        <option>Skrapar</option>
+                        <option>Ura Vajgurore</option>
+                      </optgroup>
+                      <optgroup label="Dibër">
+                        <option>Dibër</option>
+                        <option>Bulqizë</option>
+                        <option>Burrel</option>
+                        <option>Klos</option>
+                        <option>Krastë</option>
+                        <option>Mat</option>
+                        <option>Peshkopi</option>
+                        <option>Ulëz</option>
+                      </optgroup>
+                      <optgroup label="Durrës">
+                        <option>Durrës</option>
+                        <option>Fushë-Krujë</option>
+                        <option>Krujë</option>
+                        <option>Manëz</option>
+                        <option>Sukth</option>
+                        <option>Shijak</option>
+                      </optgroup>
+                      <optgroup label="Elbasan">
+                        <option>Elbasan</option>
+                        <option>Belsh</option>
+                        <option>Cërrik</option>
+                        <option>Gramsh</option>
+                        <option>Librazhd</option>
+                        <option>Peqin</option>
+                        <option>Prrenjas</option>
+                      </optgroup>
+                      <optgroup label="Fier">
+                        <option>Fier</option>
+                        <option>Ballsh</option>
+                        <option>Divjakë</option>
+                        <option>Lushnjë</option>
+                        <option>Mallakastër</option>
+                        <option>Patos</option>
+                        <option>Roskovec</option>
+                      </optgroup>
+                      <optgroup label="Gjirokastër">
+                        <option>Gjirokastër</option>
+                        <option>Dropull</option>
+                        <option>Këlcyrë</option>
+                        <option>Libohovë</option>
+                        <option>Memaliaj</option>
+                        <option>Përmet</option>
+                        <option>Tepelenë</option>
+                      </optgroup>
+                      <optgroup label="Korçë">
+                        <option>Korçë</option>
+                        <option>Bilisht</option>
+                        <option>Devoll</option>
+                        <option>Ersekë</option>
+                        <option>Kolonjë</option>
+                        <option>Leskovik</option>
+                        <option>Maliq</option>
+                        <option>Pogradec</option>
+                        <option>Pustec</option>
+                      </optgroup>
+                      <optgroup label="Kukës">
+                        <option>Kukës</option>
+                        <option>Bajram Curri</option>
+                        <option>Fierzë</option>
+                        <option>Has</option>
+                        <option>Krumë</option>
+                        <option>Tropojë</option>
+                      </optgroup>
+                      <optgroup label="Lezhë">
+                        <option>Lezhë</option>
+                        <option>Kurbin</option>
+                        <option>Kurbnesh</option>
+                        <option>Laç</option>
+                        <option>Mamurras</option>
+                        <option>Milot</option>
+                        <option>Mirditë</option>
+                        <option>Reps</option>
+                        <option>Rubik</option>
+                        <option>Rrëshen</option>
+                        <option>Shëngjin</option>
+                      </optgroup>
+                      <optgroup label="Shkodër">
+                        <option>Shkodër</option>
+                        <option>Bajzë</option>
+                        <option>Fushë-Arrëz</option>
+                        <option>Koplik</option>
+                        <option>Malësi e Madhe</option>
+                        <option>Pukë</option>
+                        <option>Vau i Dejës</option>
+                      </optgroup>
+                      <optgroup label="Tiranë">
+                        <option>Tiranë</option>
+                        <option>Kamëz</option>
+                        <option>Kavajë</option>
+                        <option>Krrabë</option>
+                        <option>Rrogozhinë</option>
+                        <option>Vorë</option>
+                      </optgroup>
+                      <optgroup label="Vlorë">
+                        <option>Vlorë</option>
+                        <option>Delvinë</option>
+                        <option>Finiq</option>
+                        <option>Himarë</option>
+                        <option>Konispol</option>
+                        <option>Orikum</option>
+                        <option>Sarandë</option>
+                        <option>Selenicë</option>
+                      </optgroup>
+                      <option value="Tjetër" data-translate="form_city_other">Tjetër</option>
+                    </select>
+                  </div>
+                  <p class="field-error" id="cf-city-error" data-translate="form_err_city">
+                    Zgjidh qytetin ku do ta instalosh.
+                  </p>
+                </div>
+
+                <div class="form-field form-field-full" id="cf-business-field" hidden>
+                  <label for="cf-business">
+                    <span data-translate="form_business">Emri i biznesit</span>
+                    <span class="optional" data-translate="form_optional">(opsionale)</span>
+                  </label>
+                  <div class="input-wrap">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
+                      <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+                    </svg>
+                    <input
+                      id="cf-business"
+                      name="business"
+                      type="text"
+                      autocomplete="organization"
+                      maxlength="120"
+                      placeholder="p.sh. Kafe, zyrë, restorant"
+                      data-translate-placeholder="form_business_ph"
+                    />
+                  </div>
+                </div>
+
+                <div class="form-field form-field-full">
+                  <label for="cf-message">
+                    <span data-translate="form_message">Mesazhi</span>
+                    <span class="optional" data-translate="form_optional">(opsionale)</span>
+                  </label>
+                  <div class="input-wrap textarea-wrap">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+                    </svg>
+                    <textarea
+                      id="cf-message"
+                      name="message"
+                      rows="4"
+                      maxlength="2000"
+                      placeholder="p.sh. Kur preferon të të telefonojmë?"
+                      data-translate-placeholder="form_message_ph"
+                    ></textarea>
+                  </div>
+                </div>
+              </div>
+
+              <div class="hp-field" aria-hidden="true">
+                <label for="cf-website">Website</label>
+                <input id="cf-website" name="website" type="text" tabindex="-1" autocomplete="off" />
+              </div>
+
+              <button type="submit" class="btn btn-primary lead-submit">
+                <span data-translate="form_submit">Dërgo kërkesën</span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="5" y1="12" x2="19" y2="12" />
+                  <polyline points="12 5 19 12 12 19" />
+                </svg>
+                <span class="btn-spinner" aria-hidden="true"></span>
+              </button>
+
+              <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+
+              <ul class="form-trust">
+                <li data-translate="form_trust_1">Pa asnjë detyrim</li>
+                <li data-translate="form_trust_2">Përgjigje brenda 24 orëve</li>
+                <li data-translate="form_trust_3">Instalim falas</li>
+              </ul>
+            </form>
+
+            <div class="form-success" id="formSuccess" tabindex="-1" hidden>
+              <div class="success-icon">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+              </div>
+              <h3 data-translate="form_success_title">Faleminderit!</h3>
+              <p data-translate="form_success_text">
+                Kërkesa jote u dërgua me sukses. Do të të kontaktojmë brenda 24
+                orëve.
+              </p>
+              <button type="button" class="btn btn-ghost" id="formAgain" data-translate="form_again">
+                Dërgo një kërkesë tjetër
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -1043,6 +1447,176 @@
             </div>
           </div>
         </div>
+        <div class="footer-coverage">
+          <div class="coverage-head">
+            <div class="coverage-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+            </div>
+            <div>
+              <h4 data-translate="coverage_title">
+                Vijmë në çdo qytet të Shqipërisë
+              </h4>
+              <p data-translate="coverage_text">
+                Instalim dhe mirëmbajtje falas kudo në vend, nga Shkodra deri në
+                Sarandë. Ekipi ynë teknik mbulon të 12 qarqet e Shqipërisë.
+              </p>
+            </div>
+          </div>
+          <div class="coverage-grid">
+            <div class="coverage-region">
+              <h5>Berat</h5>
+              <ul class="city-list">
+                <li>Berat</li>
+                <li>Çorovodë</li>
+                <li>Dimal</li>
+                <li>Kuçovë</li>
+                <li>Poliçan</li>
+                <li>Skrapar</li>
+                <li>Ura Vajgurore</li>
+              </ul>
+            </div>
+            <div class="coverage-region">
+              <h5>Dibër</h5>
+              <ul class="city-list">
+                <li>Dibër</li>
+                <li>Bulqizë</li>
+                <li>Burrel</li>
+                <li>Klos</li>
+                <li>Krastë</li>
+                <li>Mat</li>
+                <li>Peshkopi</li>
+                <li>Ulëz</li>
+              </ul>
+            </div>
+            <div class="coverage-region">
+              <h5>Durrës</h5>
+              <ul class="city-list">
+                <li>Durrës</li>
+                <li>Fushë-Krujë</li>
+                <li>Krujë</li>
+                <li>Manëz</li>
+                <li>Sukth</li>
+                <li>Shijak</li>
+              </ul>
+            </div>
+            <div class="coverage-region">
+              <h5>Elbasan</h5>
+              <ul class="city-list">
+                <li>Elbasan</li>
+                <li>Belsh</li>
+                <li>Cërrik</li>
+                <li>Gramsh</li>
+                <li>Librazhd</li>
+                <li>Peqin</li>
+                <li>Prrenjas</li>
+              </ul>
+            </div>
+            <div class="coverage-region">
+              <h5>Fier</h5>
+              <ul class="city-list">
+                <li>Fier</li>
+                <li>Ballsh</li>
+                <li>Divjakë</li>
+                <li>Lushnjë</li>
+                <li>Mallakastër</li>
+                <li>Patos</li>
+                <li>Roskovec</li>
+              </ul>
+            </div>
+            <div class="coverage-region">
+              <h5>Gjirokastër</h5>
+              <ul class="city-list">
+                <li>Gjirokastër</li>
+                <li>Dropull</li>
+                <li>Këlcyrë</li>
+                <li>Libohovë</li>
+                <li>Memaliaj</li>
+                <li>Përmet</li>
+                <li>Tepelenë</li>
+              </ul>
+            </div>
+            <div class="coverage-region">
+              <h5>Korçë</h5>
+              <ul class="city-list">
+                <li>Korçë</li>
+                <li>Bilisht</li>
+                <li>Devoll</li>
+                <li>Ersekë</li>
+                <li>Kolonjë</li>
+                <li>Leskovik</li>
+                <li>Maliq</li>
+                <li>Pogradec</li>
+                <li>Pustec</li>
+              </ul>
+            </div>
+            <div class="coverage-region">
+              <h5>Kukës</h5>
+              <ul class="city-list">
+                <li>Kukës</li>
+                <li>Bajram Curri</li>
+                <li>Fierzë</li>
+                <li>Has</li>
+                <li>Krumë</li>
+                <li>Tropojë</li>
+              </ul>
+            </div>
+            <div class="coverage-region">
+              <h5>Lezhë</h5>
+              <ul class="city-list">
+                <li>Lezhë</li>
+                <li>Kurbin</li>
+                <li>Kurbnesh</li>
+                <li>Laç</li>
+                <li>Mamurras</li>
+                <li>Milot</li>
+                <li>Mirditë</li>
+                <li>Reps</li>
+                <li>Rubik</li>
+                <li>Rrëshen</li>
+                <li>Shëngjin</li>
+              </ul>
+            </div>
+            <div class="coverage-region">
+              <h5>Shkodër</h5>
+              <ul class="city-list">
+                <li>Shkodër</li>
+                <li>Bajzë</li>
+                <li>Fushë-Arrëz</li>
+                <li>Koplik</li>
+                <li>Malësi e Madhe</li>
+                <li>Pukë</li>
+                <li>Vau i Dejës</li>
+              </ul>
+            </div>
+            <div class="coverage-region">
+              <h5>Tiranë</h5>
+              <ul class="city-list">
+                <li>Tiranë</li>
+                <li>Kamëz</li>
+                <li>Kavajë</li>
+                <li>Krrabë</li>
+                <li>Rrogozhinë</li>
+                <li>Vorë</li>
+              </ul>
+            </div>
+            <div class="coverage-region">
+              <h5>Vlorë</h5>
+              <ul class="city-list">
+                <li>Vlorë</li>
+                <li>Delvinë</li>
+                <li>Finiq</li>
+                <li>Himarë</li>
+                <li>Konispol</li>
+                <li>Orikum</li>
+                <li>Sarandë</li>
+                <li>Selenicë</li>
+              </ul>
+            </div>
+          </div>
+        </div>
         <div class="footer-bottom">
           <p data-translate="footer_copyright">
             &copy; 2026 filtrameqera.al. Të gjitha të drejtat e rezervuara.
@@ -1065,6 +1639,6 @@
       </svg>
     </a>
 
-    <script src="js/script.js?v=20250122"></script>
+    <script src="js/script.js?v=20260923"></script>
   </body>
 </html>
