@@ -617,6 +617,9 @@ function setupContactForm() {
                         city: data.city
                     });
                 }
+                if (typeof fbq === 'function') {
+                    fbq('track', 'Lead');
+                }
                 form.reset();
                 syncBusinessField();
                 showSuccess();
