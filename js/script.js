@@ -14,7 +14,7 @@ const translations = {
 
         // Hero Section
         hero_title: "Ujë i Pastër dhe i Shëndetshëm<br><span class='gradient-text'>Çdo Ditë</span>",
-        hero_subtitle: "Sistemi i vetëm 6-fazor RO+Alkalin me qera në Shqipëri. Pastërti absolute dhe shije superiore për familjen tuaj.",
+        hero_subtitle: "Sistemi 6-fazor RO+Alkalin me qera në Shqipëri. Pastërti absolute dhe shije superiore për familjen tuaj.",
         stat_purity: "Pastërti",
         stat_phases: "Faza Pastrimi",
         stat_support: "Mbështetje",
@@ -96,19 +96,13 @@ const translations = {
         pricing_per_year: "/vit",
         pricing_breakdown: "Që do të thotë 1,075 Lekë/muaj ose 35 Lekë/ditë",
         pricing_save: "Kurse XX%",
-        pricing_trial: "Provë 1 Muaj",
-        pricing_first_month: "/muaji i parë",
         pricing_feat1: "✓ Instalim falas",
         pricing_feat2: "✓ Mirëmbajtje e përfshirë",
         pricing_feat3: "✓ Ndërrim filtri çdo 6 muaj",
         pricing_feat4: "✓ Shërbim klientesh 24/7",
-        pricing_feat5: "✓ Pa kontratë afatgjatë",
         pricing_feat6: "✓ Prioritet në shërbim",
         pricing_feat7: "✓ Zbritje për përtëritje",
-        pricing_feat8: "✓ Provo pa angazhim",
-        pricing_feat9: "✓ Kthehu kur të duash",
         pricing_btn: "Zgjedh Planin",
-        pricing_btn_try: "Provo Tani",
 
         // Contact Section
         contact_subtitle: "Kontakt",
@@ -153,7 +147,7 @@ const translations = {
         form_again: "Dërgo një kërkesë tjetër",
 
         // Footer
-        footer_text: "Sistemi i vetëm 6-fazor RO+Alkalin me qera në Shqipëri për ujë të pastër dhe të shëndetshëm.",
+        footer_text: "Sistemi 6-fazor RO+Alkalin me qera në Shqipëri për ujë të pastër dhe të shëndetshëm.",
         footer_links: "Lidhje",
         footer_services: "Shërbimet",
         footer_rental: "Qira Sistemi",
@@ -177,7 +171,7 @@ const translations = {
 
         // Hero Section
         hero_title: "Pure and Healthy Water<br><span class='gradient-text'>Every Day</span>",
-        hero_subtitle: "The only 6-stage RO+Alkaline rental system in Albania. Absolute purity and superior taste for your family.",
+        hero_subtitle: "6-stage RO+Alkaline rental system in Albania. Absolute purity and superior taste for your family.",
         stat_purity: "Purity",
         stat_phases: "Filtration Stages",
         stat_support: "Support",
@@ -259,19 +253,13 @@ const translations = {
         pricing_per_year: "/year",
         pricing_breakdown: "That is 1,075 Lekë/month or 35 Lekë/day",
         pricing_save: "Save XX%",
-        pricing_trial: "1 Month Trial",
-        pricing_first_month: "/first month",
         pricing_feat1: "✓ Free installation",
         pricing_feat2: "✓ Maintenance included",
         pricing_feat3: "✓ Filter replacement every 6 months",
         pricing_feat4: "✓ 24/7 customer service",
-        pricing_feat5: "✓ No long-term contract",
         pricing_feat6: "✓ Service priority",
         pricing_feat7: "✓ Renewal discount",
-        pricing_feat8: "✓ Try without commitment",
-        pricing_feat9: "✓ Return anytime",
         pricing_btn: "Choose Plan",
-        pricing_btn_try: "Try Now",
 
         // Contact Section
         contact_subtitle: "Contact",
@@ -316,7 +304,7 @@ const translations = {
         form_again: "Send another request",
 
         // Footer
-        footer_text: "The only 6-stage RO+Alkaline rental system in Albania for pure and healthy water.",
+        footer_text: "6-stage RO+Alkaline rental system in Albania for pure and healthy water.",
         footer_links: "Links",
         footer_services: "Services",
         footer_rental: "System Rental",
